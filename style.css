@@ -109,6 +109,10 @@ h1 {
   color: var(--white);
 }
 
+.rating__value:hover {
+  background: var(--light-grey);
+}
+
 .btn {
   width: 100%;
   background: var(--Orange);
@@ -118,7 +122,13 @@ h1 {
   color: var(--white);
   text-transform: uppercase;
   font-size: 0.938rem;
+  font-weight: 700;
   letter-spacing: 3px;
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--Orange);
 }
 
 @media only screen and (min-width: 550px) {
