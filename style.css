@@ -45,7 +45,7 @@ h1 {
   margin: 0;
 }
 
-/* rating component */
+/* Rating component */
 
 .rating {
   background: var(--dark-blue);
@@ -53,6 +53,7 @@ h1 {
   max-width: 500px;
   margin: 0 auto;
   border-radius: 10px;
+  display: none;
 }
 
 .rating__container {
@@ -140,4 +141,14 @@ h1 {
   .rating__list {
     max-width: 100%;
   }
+}
+
+/* Thank you component */
+
+.thank-you {
+  background: var(--dark-blue);
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
