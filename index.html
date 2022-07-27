@@ -16,25 +16,67 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <section class="raiting">
-      <div class="raiting__container">
-        <div class="raiting__content">
+    <section class="rating">
+      <div class="rating__container">
+        <div class="rating__content">
           <span class="icon__container">
-            <img src="/images/icon-star.svg" alt="raiting-icon" />
+            <img src="/images/icon-star.svg" alt="rating-icon" />
           </span>
-          <h1 class="raiting__heading">How did we do?</h1>
-          <p class="raiting__instruction">
+          <h1 class="rating__heading">How did we do?</h1>
+          <p class="rating__instructions">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <div class="raiting__options">
-            <label>1</label>
-            <label>2</label>
-            <label>3</label>
-            <label>4</label>
-            <label>5</label>
-          </div>
-          <button class="submit">Submit</button>
+          <form>
+            <ul class="rating__list">
+              <li>
+                <input
+                  type="button"
+                  name="rating"
+                  id="num1"
+                  value="1"
+                  class="rating__value"
+                />
+              </li>
+              <li>
+                <input
+                  type="button"
+                  name="rating"
+                  id="num2"
+                  value="2"
+                  class="rating__value"
+                />
+              </li>
+              <li>
+                <input
+                  type="button"
+                  name="rating"
+                  id="num2"
+                  value="3"
+                  class="rating__value"
+                />
+              </li>
+              <li>
+                <input
+                  type="button"
+                  name="rating"
+                  id="num4"
+                  value="4"
+                  class="rating__value"
+                />
+              </li>
+              <li>
+                <input
+                  type="button"
+                  name="rating"
+                  id="num5"
+                  value="5"
+                  class="rating__value"
+                />
+              </li>
+            </ul>
+            <button class="submit">Submit</button>
+          </form>
         </div>
       </div>
     </section>
