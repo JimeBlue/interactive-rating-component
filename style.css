@@ -26,6 +26,12 @@
   --overpass: 'Overpass', sans-serif;
 }
 
+html {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: var(--overpass);
@@ -113,4 +119,15 @@ h1 {
   text-transform: uppercase;
   font-size: 0.938rem;
   letter-spacing: 3px;
+}
+
+@media only screen and (min-width: 550px) {
+  .rating__container {
+    padding: 1.5rem 4rem;
+    margin: 0 auto;
+  }
+
+  .rating__list {
+    max-width: 100%;
+  }
 }
