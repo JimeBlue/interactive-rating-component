@@ -16,7 +16,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <section class="rating">
+    <section class="rating" id="rating">
       <div class="rating__container">
         <div class="rating__content">
           <span class="icon__container">
@@ -27,7 +27,7 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <form class="rating__form">
+          <form id="raiting-form" class="rating__form">
             <ul class="rating__list">
               <li>
                 <input
@@ -83,7 +83,7 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section class="thank-you">
+    <section class="thank-you" id="thank-you">
       <div class="thank-you__container">
         <div class="submitted-image">
           <img src="/images/illustration-thank-you.svg" alt="#" />
@@ -97,5 +97,7 @@
       </div>
     </section>
     <!-- Thank you state end -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

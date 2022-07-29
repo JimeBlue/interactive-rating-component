@@ -15,7 +15,7 @@
 
   /* Neutral */
 
-  --white: hsl(0, 0%, 100%);
+  --white: white;
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
@@ -53,7 +53,6 @@ h1 {
   max-width: 500px;
   margin: 0 auto;
   border-radius: 10px;
-  display: none;
 }
 
 .rating__container {
@@ -110,6 +109,10 @@ h1 {
   color: var(--white);
 }
 
+.new {
+  background: var(--Orange);
+}
+
 .rating__value:hover {
   background: var(--light-grey);
 }
@@ -151,6 +154,7 @@ h1 {
   max-width: 500px;
   margin: 0 auto;
   border-radius: 10px;
+  display: none;
 }
 
 .thank-you__container {
