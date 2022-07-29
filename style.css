@@ -87,34 +87,36 @@ h1 {
 
 /* Form */
 
-.rating__form {
-  margin: 1.5rem 0;
-}
-
-.rating__list {
-  display: flex;
-  justify-content: space-between;
+ul {
   list-style: none;
-  max-width: 95%;
-  padding: 0;
-  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
-.rating__value {
-  width: 45px;
-  height: 45px;
-  border-radius: 100%;
-  background: #313b47;
-  border: none;
-  color: var(--white);
+input[type='radio'] {
+  display: none;
 }
-
-.new {
-  background: var(--Orange);
+input:checked {
+  background: PaleVioletRed;
 }
-
-.rating__value:hover {
-  background: var(--light-grey);
+label {
+  cursor: pointer;
+  background-color: rgba(124, 135, 152, 0.1);
+  padding: 17px 25px;
+  font-size: 1.2em;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+input:hover + label {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+input:checked + label {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
 }
 
 .btn {
@@ -139,10 +141,6 @@ h1 {
   .rating__container {
     padding: 1.5rem 4rem;
     margin: 0 auto;
-  }
-
-  .rating__list {
-    max-width: 100%;
   }
 }
 
