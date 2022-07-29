@@ -27,9 +27,11 @@ $(document).ready(function () {
 const rates = document.querySelectorAll('.rating__value');
 rates.forEach((rate) => {
   rate.addEventListener('click', () => {
-    if ((rate.style.color = 'white')) {
-      rate.style.color = 'blue';
-    }
+    rate.style.color = 'white';
+
+    let active = document.activeElement;
+    console.log(active);
+    active.style.color = 'blue';
   });
 
   console.log(rates);
