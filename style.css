@@ -87,7 +87,7 @@ h1 {
 
 /* Form */
 
-ul {
+.rating__list {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -95,13 +95,21 @@ ul {
   width: 90%;
 }
 
+/* How to style radio inputs to look like regular btns */
+
+/* Do not show the radio inputs */
+
 input[type='radio'] {
   display: none;
 }
+
+/* Give bg to checked radios */
 input:checked {
   background: PaleVioletRed;
 }
-label {
+
+/* Style labels instead of radios */
+.rating__label {
   cursor: pointer;
   background-color: rgba(124, 135, 152, 0.1);
   padding: 17px 25px;
@@ -110,11 +118,15 @@ label {
   display: inline-block;
   margin: 5px;
 }
-input:hover + label {
+
+/* Hover to both radios and labels using adjacent selector*/
+input:hover + .rating__label {
   background-color: hsl(216, 12%, 54%);
   color: white;
 }
-input:checked + label {
+
+/* Give bg to both checked radios and labels using adjacent selector*/
+input:checked + .rating__label {
   background-color: hsl(25, 97%, 53%);
   color: white;
 }
