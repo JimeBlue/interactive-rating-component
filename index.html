@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -58,12 +57,16 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section class="thank-you" id="thank-you">
+    <section class="thank-you hide" id="thank-you">
       <div class="thank-you__container">
         <div class="submitted-image">
           <img src="/images/illustration-thank-you.svg" alt="#" />
         </div>
-        <span class="badge">You selected out of</span>
+        <span class="badge"
+          >You selected
+          <span id="selected-rating"></span>
+          out of 5
+        </span>
         <h1 class="thank-you__heading">Thank you!</h1>
         <p class="thank-you__message">
           We appreciate you taking the time to give a rating. If you ever need
@@ -72,7 +75,6 @@
       </div>
     </section>
     <!-- Thank you state end -->
-    <script src="js/jquery-3.6.0.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

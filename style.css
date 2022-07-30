@@ -45,6 +45,12 @@ h1 {
   margin: 0;
 }
 
+/* Utility */
+
+.hide {
+  display: none;
+}
+
 /* Rating component */
 
 .rating {
@@ -73,7 +79,7 @@ h1 {
   align-items: center;
 }
 
-/* Content */
+/* Rating content */
 
 .rating__heading {
   margin: 1.25rem 0;
@@ -96,7 +102,6 @@ h1 {
 }
 
 /* How to style radio inputs to look like regular btns */
-
 /* Do not show the radio inputs */
 
 input[type='radio'] {
@@ -164,7 +169,6 @@ input:checked + .rating__label {
   max-width: 500px;
   margin: 0 auto;
   border-radius: 10px;
-  display: none;
 }
 
 .thank-you__container {
